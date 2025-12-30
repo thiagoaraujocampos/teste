@@ -17,6 +17,7 @@ export class WikiOp {
       );
 
       console.log(response.data.query.allpages);
+      return response.data.query.allpages;
     } catch (error) {
       console.log(error, " na GetPageNames");
     }

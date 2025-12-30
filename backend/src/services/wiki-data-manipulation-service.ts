@@ -9,7 +9,8 @@ export class WikiDataManipulationService {
     const allPagesRecord: Record<number, Page> = {};
 
     if (!pageNames) {
-      return console.log("não tem pageNames");
+      console.log("não tem pageNames");
+      return;
     }
 
     const allPages = pageNames.map((name: string) => WikiOp.getPage(name));
